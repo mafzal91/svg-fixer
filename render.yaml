@@ -1,0 +1,14 @@
+# Render Blueprint — static site
+# https://render.com/docs/static-sites
+
+services:
+  - type: web
+    name: svg-fixer
+    runtime: static
+    buildCommand: npm ci && npm run build
+    staticPublishPath: ./dist
+    # SPA: serve index.html for client routes (handy if you add routing later)
+    routes:
+      - type: rewrite
+        source: /*
+        destination: /index.html
