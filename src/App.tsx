@@ -314,12 +314,12 @@ function FileCard({
 
 function Preview({ label, svg }: { label: string; svg: string }) {
   return (
-    <div className="flex flex-col gap-2 bg-neutral-950 p-4">
+    <div className="flex min-w-0 min-h-0 flex-col gap-2 bg-neutral-950 p-4">
       <span className="text-xs font-medium uppercase tracking-wide text-neutral-500">
         {label}
       </span>
       <div
-        className="flex h-40 items-center justify-center rounded-md bg-[repeating-conic-gradient(#1f1f1f_0%_25%,#141414_0%_50%)] [background-size:16px_16px] text-neutral-100"
+        className="flex h-40 w-full min-h-0 min-w-0 items-center justify-center overflow-hidden rounded-md bg-[repeating-conic-gradient(#1f1f1f_0%_25%,#141414_0%_50%)] [background-size:16px_16px] p-3 text-neutral-100 [&>svg]:h-auto [&>svg]:w-auto [&>svg]:min-h-0 [&>svg]:min-w-0 [&>svg]:max-h-full [&>svg]:max-w-full"
         dangerouslySetInnerHTML={{ __html: svg }}
       />
     </div>
