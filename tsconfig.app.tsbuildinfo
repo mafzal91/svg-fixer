@@ -1,1 +1,1 @@
-{"root":["./src/app.tsx","./src/main.tsx","./src/svgo-config.ts"],"version":"5.9.3"}
+{"root":["./src/app.tsx","./src/main.tsx","./src/svgo-config.ts","./src/svgr-transform.ts","./src/types.ts","./src/utils.ts","./src/components/filecard.tsx","./src/components/svgosettingspanel.tsx","./src/components/svgrsettingspanel.tsx","./src/components/ui.tsx"],"version":"5.9.3"}
